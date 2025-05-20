@@ -1,196 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apartmani Pavlović - savršen smeštaj na Divčibarama. Uživajte u prirodi, tišini i udobnosti.">
-  <title>Apartmani Pavlović - Divčibare</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: url('assets/images/9.jpeg') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      text-align: center;
-      padding: 0 1em;
-    }
-    header h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      margin: 0;
-    }
-    header p {
-      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-    }
-    nav {
-      background: #2c3e50;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 1em;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0.5em 1em;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #f1c40f;
-    }
-    .section {
-      padding: 4em 1em;
-      max-width: 1200px;
-      margin: auto;
-      animation: fadeIn 1s ease-in;
-    }
-    .section h2 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 1em;
-    }
-    .section p {
-      text-align: justify;
-      line-height: 1.6;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1em;
-      justify-items: center;
-    }
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    .contact {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 3em 1em;
-    }
-    .contact a {
-      color: #f1c40f;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: #1a252f;
-      color: #ccc;
-    }
-    #topBtn {
-      display: none;
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #f1c40f;
-      color: #2c3e50;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 1.5em;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-    #topBtn:hover {
-      background-color: #e1b20e;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Apartmani Pavlović - savršen smeštaj na Divčibarama. Uživajte u prirodi, tišini i udobnosti."
+        />
+        <title>Apartmani Pavlović - Divčibare</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                font-family: "Roboto", sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            header {
+                background: url("assets/images/9.jpeg") center/cover no-repeat;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-shadow: 2px 2px 4px #000;
+                text-align: center;
+                padding: 0 1em;
+            }
+            header h1 {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                margin: 0;
+            }
+            header p {
+                font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            }
+            nav {
+                background: #2c3e50;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 1em;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0.5em 1em;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #f1c40f;
+            }
+            .section {
+                padding: 4em 1em;
+                max-width: 1200px;
+                margin: auto;
+                animation: fadeIn 1s ease-in;
+            }
+            .section h2 {
+                text-align: center;
+                color: #2c3e50;
+                margin-bottom: 1em;
+            }
+            .section p {
+                text-align: justify;
+                line-height: 1.6;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1em;
+                justify-items: center;
+            }
+            .gallery img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .gallery img:hover {
+                transform: scale(1.03);
+            }
+            .contact {
+                background: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 3em 1em;
+            }
+            .contact a {
+                color: #f1c40f;
+                text-decoration: none;
+                font-size: 1.1em;
+            }
+            .contact a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                text-align: center;
+                padding: 1em;
+                background: #1a252f;
+                color: #ccc;
+            }
+            #topBtn {
+                display: none;
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background-color: #f1c40f;
+                color: #2c3e50;
+                border: none;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5em;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+            #topBtn:hover {
+                background-color: #e1b20e;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="pocetna">
+            <h1>Apartmani Pavlović</h1>
+            <p>Divčibare - Vaš savršen planinski odmor</p>
+        </header>
 
-  <header>
-    <h1>Apartmani Pavlović</h1>
-    <p>Divčibare - Vaš savršen planinski odmor</p>
-  </header>
+        <nav style="position: sticky; top: 0; z-index: 100">
+            <a href="#pocetna">Početna</a>
+            <a href="#o-nama">O nama</a>
+            <a href="#galerija">Galerija</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
 
-  <nav>
-    <a href="#o-nama">O nama</a>
-    <a href="#galerija">Galerija</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
+        <section class="section" id="o-nama">
+            <h2>O nama</h2>
+            <p>
+                Dobrodošli u Apartmane Pavlović na Divčibarama! Naši moderni,
+                udobni i potpuno opremljeni apartmani savršen su izbor za vaš
+                boravak u prirodi. Bilo da dolazite zimi ili leti, uživaćete u
+                planinskom vazduhu, prelepim pejzažima i toploj atmosferi naših
+                apartmana.
+            </p>
+        </section>
 
-  <section class="section" id="o-nama">
-    <h2>O nama</h2>
-    <p>
-      Dobrodošli u Apartmane Pavlović na Divčibarama! Naši moderni, udobni i potpuno opremljeni apartmani savršen su izbor za vaš boravak u prirodi.
-      Bilo da dolazite zimi ili leti, uživaćete u planinskom vazduhu, prelepim pejzažima i toploj atmosferi naših apartmana.
-    </p>
-  </section>
+        <section class="section" id="galerija">
+            <h2>Galerija</h2>
+            <div class="gallery">
+                <img src="assets/images/1.jpeg" alt="Panorama Divčibara" />
+                <img
+                    src="assets/images/2.jpeg"
+                    alt="Letnji pogled na Divčibare"
+                />
+                <img src="assets/images/3.jpeg" alt="Zimski pejzaž Divčibara" />
+                <img src="assets/images/4.jpeg" alt="Planina i priroda" />
+            </div>
+        </section>
 
-  <section class="section" id="galerija">
-    <h2>Galerija</h2>
-    <div class="gallery">
-      <img src="assets/images/1.jpeg" alt="Panorama Divčibara">
-      <img src="assets/images/2.jpeg" alt="Letnji pogled na Divčibare">
-      <img src="assets/images/3.jpeg" alt="Zimski pejzaž Divčibara">
-      <img src="assets/images/4.jpeg" alt="Planina i priroda">
-    </div>
-  </section>
+        <section class="contact" id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Rezervacije i informacije:</p>
+            <p>Telefon: <a href="tel:+381601234567">+381 60 123 4567</a></p>
+            <p>
+                Email:
+                <a href="mailto:apartmanipavlovic@divcibare.rs"
+                    >apartmanipavlovic@divcibare.rs</a
+                >
+            </p>
+            <p>
+                Instagram:
+                <a href="https://instagram.com/apartmani.pavlovic"
+                    >@apartmani_pavlovic_divcibare</a
+                >
+            </p>
+        </section>
 
-  <section class="contact" id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Rezervacije i informacije:</p>
-    <p>Telefon: <a href="tel:+381601234567">+381 60 123 4567</a></p>
-    <p>Email: <a href="mailto:apartmanipavlovic@divcibare.rs">apartmanipavlovic@divcibare.rs</a></p>
-    <p>Instagram: <a href="https://instagram.com/apartmani.pavlovic">@apartmani_pavlovic_divcibare</a></p>
-  </section>
+        <footer>
+            &copy; 2025 Apartmani Pavlović, Divčibare. Sva prava zadržana.
+        </footer>
 
-  <footer>
-    &copy; 2025 Apartmani Pavlović, Divčibare. Sva prava zadržana.
-  </footer>
+        <button onclick="topFunction()" id="topBtn" title="Na vrh">
+            &#8679;
+        </button>
 
-  <button onclick="topFunction()" id="topBtn" title="Na vrh">&#8679;</button>
+        <script>
+            const topBtn = document.getElementById("topBtn");
 
-  <script>
-    const topBtn = document.getElementById("topBtn");
+            window.onscroll = () => {
+                if (
+                    document.body.scrollTop > 200 ||
+                    document.documentElement.scrollTop > 200
+                ) {
+                    topBtn.style.display = "block";
+                } else {
+                    topBtn.style.display = "none";
+                }
+            };
 
-    window.onscroll = () => {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        topBtn.style.display = "block";
-      } else {
-        topBtn.style.display = "none";
-      }
-    };
-
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
-</body>
+            function topFunction() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        </script>
+    </body>
 </html>
