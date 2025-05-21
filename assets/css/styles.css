@@ -9,7 +9,7 @@ body {
 }
 header {
     background: url("../images/9.jpeg") center/cover no-repeat;
-    height: 83.5vh;
+    height: 93.5vh;
     /* Add this new style for bottom navigation */
     position: relative;
     display: flex;
