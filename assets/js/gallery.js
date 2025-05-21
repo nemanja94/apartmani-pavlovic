@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             updateLightboxImage();
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+            
+            // Hide top button when lightbox is open
+            const topBtn = document.getElementById("topBtn");
+            if (topBtn) {
+                topBtn.style.display = 'none';
+            }
         });
     });
     
@@ -62,6 +68,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
+        
+        // Restore top button visibility based on scroll position
+        const topBtn = document.getElementById("topBtn");
+        if (topBtn) {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topBtn.style.display = 'block';
+            } else {
+                topBtn.style.display = 'none';
+            }
+        }
     }
     
     // Next image
