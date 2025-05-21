@@ -10,6 +10,8 @@ body {
 header {
     background: url("../images/9.jpeg") center/cover no-repeat;
     height: 93.5vh;
+    /* Add this new style for bottom navigation */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
